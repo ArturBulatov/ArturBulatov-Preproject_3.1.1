@@ -1,6 +1,6 @@
 package web.controller;
 
-import web.Service.UserService;
+import web.Service.UserServiceImp;
 import web.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -14,10 +14,10 @@ import java.util.List;
 
 @Controller
 public class UserController {
-    private final UserService userService;
+    private final UserServiceImp userService;
 
     @Autowired
-    public UserController(UserService userService) {
+    public UserController(UserServiceImp userService) {
         this.userService = userService;
     }
 
